@@ -1,0 +1,185 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+
+/* index */
+body{
+    min-width: 1350px;
+    color: #58412A;
+}
+#mgAuto{width: 80%;
+    margin: 0 auto;}
+
+/* ===========================header============================ */
+
+header{
+    height: 6rem;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 2rem 0;
+    font-weight: bold;
+}
+header nav a:nth-child(1){
+    font-family: 'Prociono', serif;
+    font-size: 24px;
+}
+header div a{
+    margin: 0 30px;
+    
+}
+header div a:hover{
+    text-decoration: underline;
+}
+
+
+/* =======================first-content============================== */
+
+.first-content .spot{
+    background-image: url(../img/CON1.jpg);
+    width: 100%; height: 65vh;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-content .spot b{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Prociono', serif;
+    transition: all ease 1s;
+}
+.first-content .spot:hover b{
+    letter-spacing: 30px;
+}
+.first-content .spot p{
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+/* =========================second-content======================== */
+
+.sec-content{ margin: 0 0 100px 0;}
+.sec-content div{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 100px 0; */
+}
+.sec-content h2{
+    padding: 4rem 0;
+    font-size: 52px;
+    font-family: 'Prociono', serif;
+}
+.sec-content figure{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.sec-content figure:hover figcaption{
+    transform: translateY(0);
+}
+.sec-content figure p{margin: 0;}
+.sec-content figure p img{width: 90%;}
+.sec-content figure figcaption{
+    position: absolute;
+    top: 0px;
+    /* text-align: center; */
+    background-color: rgb(241, 233, 226, 0.8);
+    width: 90%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    transform: translateY(-100%);
+    transition: all ease 1s;
+}
+.sec-content figure figcaption p:nth-child(1){
+    font-size: 26px;
+    padding: 10px 0;
+    font-family: 'Prociono', serif;
+}
+.sec-content figure figcaption p:nth-child(2){
+    font-size: 16px;
+}
+
+/* =======================.thr-content========================= */
+
+.thr-content div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    color: #58412A;
+}
+.thr-content div:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.thr-content div p{
+    width: 48%;
+}
+.thr-content div p img{
+    width: 100%;
+    border-radius: 28px;
+}
+
+.thr-content div dl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.thr-content div dl dt{
+    margin: 2rem 0;
+}
+.thr-content div dl dt:nth-child(1), dd:nth-child(4){
+    font-family: 'Prociono', serif;
+}
+
+.thr-content div dl dd a{
+    text-decoration: underline;
+}
+.thr-content div dl dt:nth-child(1){
+    font-size: 52px;
+
+}
+.text-right{text-align: right;}
+
+
+/* ======================footer======================== */
+footer{
+    background-color: #EEE7E1;
+    width: 100%;
+    margin: 0;
+}
+.ft-bondle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 15rem;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.ft-bondle h2{
+    font-size: 26px;
+    padding-top: 87px;
+}
+.info-bondle{
+    display: flex;
+}
+.info-bondle ul{
+    margin: 0 26px;
+}
+.info-bondle ul:nth-child(1) li{
+    text-decoration: underline;
+}
+.info-bondle ul li:nth-child(1){
+    margin-bottom: 25px;
+}
